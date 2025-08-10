@@ -1,7 +1,7 @@
 import os
 import subprocess
 
-hostname= subprocess.run(["hostname"] , capture_output=True, text==True).stdout.strip()
+hostname= subprocess.run(["hostname"], capture_output=True, text=True).stdout.strip()
 uptime_server = subprocess.run(["uptime" , "-p"], capture_output=True, text=True).stdout.strip()
 
 with open("/proc/loadavg","r") as f:
