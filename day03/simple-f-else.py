@@ -2,7 +2,7 @@ import os
 import subprocess
 
 with open("/proc/loadavg","r") as f:
-    load = f.read().split()[0]
+    load = float(f.read().split()[0])
 
 
 if load > 1.0:
